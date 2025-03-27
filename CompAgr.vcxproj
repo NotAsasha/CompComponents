@@ -132,6 +132,8 @@
     <ClCompile Include="CPU.cpp" />
     <ClCompile Include="Monitor.cpp" />
     <ClCompile Include="RAM.cpp" />
+    <ClCompile Include="SmartMonitor.cpp" />
+    <ClCompile Include="Speaker.cpp" />
     <ClCompile Include="Storage.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +142,8 @@
     <ClInclude Include="Global.h" />
     <ClInclude Include="Monitor.h" />
     <ClInclude Include="RAM.h" />
+    <ClInclude Include="SmartMonitor.h" />
+    <ClInclude Include="Speaker.h" />
     <ClInclude Include="Storage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

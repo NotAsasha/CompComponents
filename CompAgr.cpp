@@ -2,7 +2,7 @@
 #include "CPU.h"
 #include "RAM.h"
 #include "Storage.h"
-#include "Monitor.h"
+#include "SmartMonitor.h"
 
 
 
@@ -48,10 +48,14 @@ int main() {
     Computer myComputer("Intel i6", 31, "SSD", 513);
 
 
-    Monitor myMonitor("NotAMonitor", 27);
-    myComputer.AddMonitor(&myMonitor);
+    SmartMonitor mySmartMonitor("NotAMonitor", 27, 100);
+    myComputer.AddMonitor(&mySmartMonitor);
 
     myComputer.Display();
 
+    std::cout << "\nTesting smart monitor features:\n";
+    mySmartMonitor.turnOn();
+    mySmartMonitor.increaseBrightness();
+    mySmartMonitor.increaseVolume();
     return 0;
 }
